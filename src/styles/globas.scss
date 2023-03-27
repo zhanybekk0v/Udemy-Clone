@@ -1,0 +1,60 @@
+/* this code is just an example of global scss styling */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f6;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @media (min-width: 425px) {
+    padding: 0 18px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 834px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 36px;
+  }
+}
+
+.root {
+  margin: 0 auto;
+}

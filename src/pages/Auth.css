@@ -1,0 +1,177 @@
+.block__btn__login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.block__btn__login button {
+  border: 1px solid #fcfcfc;
+  ;
+  background-color: #242323;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.block__btn__login button:hover {
+  color: black;
+  background-color: #fff;
+  transition: 0.8s;
+  border: 1px solid black;
+}
+
+.mentor__reg__checkbox span {
+  font-size: 13px;
+}
+
+.mentor-reg__input fieldset {
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+  border: none;
+}
+
+.input-label fieldset {
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+  border: none !important;
+}
+
+.mentor-reg__input input {
+  padding: 15px;
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 20px;
+}
+
+.mentor-reg__btn:hover {
+  color: black;
+  background-color: #fff !important;
+  transition: 0.8s;
+  border: 0.5px solid black
+}
+
+
+.mentor-log__p {
+  font-size: 23px !important;
+}
+
+.social-media__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  gap: 10px;
+  text-align: center;
+
+}
+
+.social-media__btn div {
+  margin: 0;
+}
+
+.social-media__btn button {
+  border-radius: 20px;
+  border: none;
+  background-color: #17191b;
+  padding: 10px;
+  color: #fff;
+
+}
+
+.social-media__btn button:hover {
+  color: black;
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+
+}
+
+.social-media__logo {
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  border-radius: 50%;
+  margin-right: 10px !important;
+}
+
+
+#mentor-log__link {
+  margin-right: 20px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.forgot-password__btn {
+ 
+  transition: 0.5s;
+  color: #fff;
+}
+
+.forgot-password__btn:hover {
+  background-color: #fff !important;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.questions-block__label {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 12px;
+  border-radius: 26px;
+  font-size: 17px;
+  border: 1px solid black;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.MuiRadio-root {
+  margin-right: 50px !important;
+  /* width: 50px; */
+  width: 10px;
+  height: 10px;
+  background-color: white !important;
+}
+
+.questions-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40vw;
+}
+
+.questions-block button {
+  background-color: #2e2d2d;
+  border: 1.3px solid black;
+  margin-top: 25px;
+  border-radius: 20px;
+  color: rgb(252, 248, 248);
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+  transition:0.6s;
+}
+
+.questions-block button:hover {
+  color: #212121;
+  border: 1px solid black;
+  /* border: none; */
+  background-color: rgb(255, 255, 255);
+  transition: 0.6s;
+
+}
+.mentor-link-footer:hover {
+  border-bottom: 2px solid black;
+  transition: 0.5s;
+}
+
+.question__btn{
+  text-align: center;
+  background-color: #242323;
+  color: white;
+}
+.question__btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: white;
+}
