@@ -11,9 +11,15 @@ import ChooseStatusRegister from '../pages/AuthPage/status/ChooseStatusRegister'
 import UserLogin from '../pages/AuthPage/userStatus/UserLogin'
 import UserRegister from '../pages/AuthPage/userStatus/UserRegister'
 import CartPage from '../pages/CartPage/CartPage'
+import HomePage from '../pages/HomePage/HomePage'
 import LessonsPage from '../pages/LessonsPage'
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage'
 import ProfilePage from '../pages/ProfilePage'
+import Course from '../pages/HomePage/Course'
+import Python from '../pages/HomePage/Courses/Python'
+import JavaScript from '../pages/HomePage/Courses/JavaScript'
+import WebDev from '../pages/HomePage/Courses/WebDev'
+import Excel from '../pages/HomePage/Courses/Excel'
 
 const PUBLIC_ROUTES = [
   {
@@ -85,6 +91,11 @@ const PUBLIC_ROUTES = [
     id: 14,
     element: <CartPage />,
     link: 'cart'
+  },
+  {
+    id: 15,
+    element: <HomePage />,
+    link: '/'
   }
 ]
 
@@ -95,6 +106,12 @@ const Router = () => {
         {PUBLIC_ROUTES.map((item) => (
           <Route path={item.link} element={item.element} key={item.id} />
         ))}
+         <Route path='course/*' element={<Course />}>
+              <Route path=":coursename/python" element={<Python/>} />
+              <Route path=":coursename/javascript" element={<JavaScript/>} />
+              <Route path=":coursename/wev-dev" element={<WebDev/>} />
+              <Route path=":coursename/excel" element={<Excel/>} />
+         </Route>
       </Routes>
     </>
   )

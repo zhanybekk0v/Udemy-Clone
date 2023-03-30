@@ -16,6 +16,7 @@ import "./Navbar.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../../contexts/AuthContextProvider";
 import { Badge } from "@mui/material";
+import LanguageIcon from '@mui/icons-material/Language';
 
 const pages = ["Udemy Buisiness", "Продавайте на Udemy", "Blog"];
 const settings = ["Profile", "Account", "Dashboard"];
@@ -74,7 +75,7 @@ const Navbar: React.FC = () => {
             udemy
           </Typography>
           <div>
-            <input style={{width: '60vmin', border:'2px solid black', borderRadius:'20px', padding:'10px 0', textAlign:'center', fontSize:'16px'}} type="text" placeholder='Ищите что угодно........' />
+            <input style={{ width: '60vmin', border: '2px solid black', borderRadius: '20px', padding: '10px 0', textAlign: 'center', fontSize: '16px' }} type="text" placeholder='Ищите что угодно........' />
           </div>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -117,31 +118,31 @@ const Navbar: React.FC = () => {
           </Box>
 
           <Link to='/cart'>
-        <MenuItem >
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="primary-search-account-menu"
-            aria-haspopup="true"
-            color="default"
+            <MenuItem >
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="primary-search-account-menu"
+                aria-haspopup="true"
+                color="default"
 
-          >
-            <Badge  color='warning' >
-            <LocalGroceryStoreIcon />
-            </Badge>
-          </IconButton>
-          {/* <p>Cart</p> */}
-        </MenuItem>
-      </Link>
+              >
+                <Badge color='warning' >
+                  <LocalGroceryStoreIcon />
+                </Badge>
+              </IconButton>
+              {/* <p>Cart</p> */}
+            </MenuItem>
+          </Link>
 
           {nickName ? (
             <>
-              <Typography sx={{color:"black", border:"1px solid black", padding:'5px 10px'}}>ADMIN</Typography>
+              <Typography sx={{ color: "black", border: "1px solid black", padding: '5px 10px' }}>ADMIN</Typography>
               <Box sx={{ flexGrow: 0, marginLeft: "15px" }}>
                 <Tooltip title="Open settings">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar
-                    sx={{fontSize:"25px", textAlign:'center', backgroundColor:"black"}}
+                      sx={{ fontSize: "25px", textAlign: 'center', backgroundColor: "black" }}
                       alt={nickName}
                       src="/static/images/avatar/2.jpg"
                     />
@@ -170,9 +171,9 @@ const Navbar: React.FC = () => {
                   ))}
                   <MenuItem key={"logout"} >
                     <Typography textAlign="center"
-                    onClick={logOut}
+                      onClick={logOut}
                       sx={{ fontSize: "0.875rem", color: "black", fontWeight: 700 }}
-                    >Logout</Typography>
+                    >Выйти</Typography>
                   </MenuItem>
                 </Menu>
               </Box>
@@ -183,16 +184,21 @@ const Navbar: React.FC = () => {
                 <Typography
                   sx={{ fontSize: "0.875rem", color: "black", fontWeight: 700, border: '1px solid black', padding: '7px 14px' }}
                 >
-                  LOG IN
+                  ВОЙТИ
                 </Typography>
               </Button>
               <Button onClick={() => navigate("/choose-status-register")}>
                 <Typography
-                  sx={{ fontSize: "0.875rem", color: "white", fontWeight: 700, border: '1px solid white', padding: '7px 14px', backgroundColor:'black', }}
+                  sx={{ fontSize: "0.875rem", color: "white", fontWeight: 700, border: '1px solid white', padding: '7px 14px', backgroundColor: 'black', }}
                 >
-                  SIGN UP
+                  Регистрация
                 </Typography>
               </Button>
+              <IconButton onClick={() => navigate("/")}>
+                <LanguageIcon
+                  sx={{ color:'black' , border: '1px solid black', padding: '5px 7px', backgroundColor: 'white', }}
+                />
+              </IconButton>
             </div>
           )}
         </Toolbar>

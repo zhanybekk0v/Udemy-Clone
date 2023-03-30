@@ -1,0 +1,309 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.header-logo {
+  position: absolute;
+  margin-bottom: 50px;
+}
+
+.header-logo img {
+  width: 97%;
+}
+
+.header-title {
+  position: relative;
+  width: 40%;
+  background-color: white;
+  top: 70px;
+  left: 55px;
+  height: 200px;
+  max-width: 450px;
+  padding: 40px 50px;
+}
+
+.header-title h1 {
+  font-size: 30px;
+}
+
+.header-title p {
+  font-size: 19px;
+}
+
+.header-content {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-top: 60px;
+}
+
+.header-content h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.header-content p {
+  font-size: 18px;
+  max-width: 90%;
+}
+
+.service-course {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.course-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.course-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+  font-weight: 400;
+  text-shadow: rgb(145, 141, 141) -2px 0, rgb(255, 255, 255) 2px 0;
+}
+
+.course-menu a:hover {
+  border-bottom: 0.5px solid black;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.info-course {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  border: 1px dotted black;
+  margin-bottom: 60px;
+}
+
+.video-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.video-wrapper h2 {
+  font-size: 25px;
+  text-align: start;
+  font-weight: 600;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  width: 280px;
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+  padding: 10px 10px;
+  height: 380px;
+  transition: 0.4s;
+}
+
+.info-card:hover {
+  transform: scale(95%);
+  transition: 0.4s;
+}
+
+.info-pic img {
+  width: 100%;
+  margin: auto;
+  border: 1px dotted black;
+  height: 170px;
+}
+
+.info-card h2 {
+  max-width: 250px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: -1px;
+}
+
+.info-card_avtor {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.info-card-reiting {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.info-card_reiting-num {
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(235, 128, 41);
+}
+
+.info-card_reit {
+  width: 150px;
+  height: 40px;
+}
+
+.info-card_price {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 15px;
+
+}
+
+.info-card_price span {
+  font-size: 17px;
+  text-decoration: line-through;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.info-card_genre {
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(204, 215, 41);
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.kategory-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.kategory-title {
+  font-size: 25px;
+  text-align: start;
+  font-weight: 600;
+}
+
+.kategory_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px
+}
+
+.kategory-pic img {
+  box-shadow: 0px 1px 5px 2px rgba(158, 162, 164, 0.2);
+}
+
+.kategory-pic {
+  transition: 0.5s;
+}
+
+.kategory-pic:hover {
+  transform: scale(90%);
+  transition: 0.5s;
+}
+
+.kategory-descr h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+.lessons {
+  background-color: rgb(235, 248, 250);
+  height: 500px;
+}
+.lessons-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.lessons-title  h2 {
+  font-size: 29px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.lessons-category{
+  width: 100%;
+}
+.lessons-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.items-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.lessons-items a {
+  text-decoration: none;
+}
+
+.lessons-items li {
+  list-style-type: none;
+}
+
+.lessons-item {
+  font-size: 18px;
+  color: rgb(6, 6, 154);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.lessons-item:hover {
+  color: rgb(7, 7, 84);
+}
+
+.items-descr{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.btn {
+  margin-left: 30px;
+}
+
+.btnLesson{
+  padding: 10px;
+  width: 250px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+}
+
+.partner-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partner-title h2 {
+  font-size: 29px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.partner-title p {
+  font-size: 19px;
+  font-weight: 350;
+  text-align: center;
+}
+
+.partner-title {
+  margin-bottom: 30px;
+}
+
+.partner-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

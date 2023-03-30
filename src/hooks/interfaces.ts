@@ -17,3 +17,15 @@ export interface user {
   password: string;
   password2: string;
 }
+
+export interface IpopVideo {
+  id: number;
+  img: string;
+  title: string;
+  avtor: string;
+  reiting: number;
+  watched: string;
+  price: string;
+  prev_price: string;
+  popular: string;
+}
